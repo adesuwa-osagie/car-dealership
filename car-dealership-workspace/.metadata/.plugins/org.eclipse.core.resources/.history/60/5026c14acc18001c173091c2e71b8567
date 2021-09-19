@@ -1,0 +1,28 @@
+package car_dealership;
+
+public class Employee {
+	
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void runCreditHistory(Customer customer, double doubleAmount) {
+		
+	}
+	
+	public void handleCustomer (Customer customer, boolean finance, Vehicle vehicle) {
+		
+		if (finance) {
+			
+			double doubleAmount = customer.getCashOnHand() * 2;
+			runCreditHistory(customer, doubleAmount);
+		}
+	}
+
+}
